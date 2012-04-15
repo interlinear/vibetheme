@@ -12,14 +12,14 @@ body {
 a,
 a:link,
 a:visited {
-  color: #1BA0CC;
+  color: #297229;
 }
 
 /* Hover/active link styles. Don't forget :focus for accessibility */
 a:hover,
 a:focus,
 a:active {
-  color: #1BA0CC;
+  color: #297229;
 }
 
 
@@ -46,6 +46,12 @@ body {
 /* Add float here to put logo and site name side by side, also add margins as
   needed */
 #logo {
+	float: left;
+	display: inline-block;
+}
+
+#logo img{
+	width: 150px;
 }
 
 /* Link and hover styles for site name */
@@ -116,6 +122,7 @@ body {
 .main-menu-inner ul.menu a:visited {
   color: #000;
   padding: 8px 18px;
+  font-family: Verdana, sans-serif;
 }
 
 .main-menu-inner ul.menu a:hover,
@@ -166,6 +173,16 @@ body {
   background-color: #DB610C;
 }
 
+ul.menu li a{
+	font-family: Verdana, sans-serif;
+	color: #153A15;
+}
+
+.region-main-menu ul.menu li a
+.region-main-menu ul.menu li a:active
+.region-main-menu ul.menu li a:visited{
+	color: #153A15;
+}
 
 /* Secondary menu
 -------------------------------------------------------------- */
@@ -254,7 +271,13 @@ body {
 /-------------------------------------------------------------- */
 /* Page and full node titles */
 h1.title {
-  color: #1BA0CC;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #163D16;
+}
+
+h2.title{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #163D16;
 }
 
 
@@ -268,16 +291,25 @@ h1.title {
 
 /* Typography for node titles */
 h2.title {
+	color: #3399FF;
 }
 
 /* Colors and styles for linked node titles, ie. teaser listing at /node */
+h2 a{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
 h2.title a:link,
 h2.title a:visited {
+	color: green;
 }
 
 h2.title a:hover,
 h2.title a:focus,
 h2.title a:active {
+	color: red;
 }
 
 /* Separators and padding for node teasers */
@@ -340,6 +372,7 @@ div.content-help-inner div.help {
 /* Default block title styles
 /-------------------------------------------------------------- */
 h2.block-title {
+	display: none;
 }
 
 
@@ -542,6 +575,9 @@ div.comment ul.links a {
 .comment-wrapper .picture img {
 }
 
+h2.comment-form{
+	color: #666;
+}
 
 /* Forum
 /-------------------------------------------------------------- */
@@ -576,7 +612,7 @@ div.poll div.bar div.foreground {
 /* TODO: Skinr styles
 /-------------------------------------------------------------- */
 
-.header-group .block-menu {
+.-group .block-menu {
   padding-top: 10px;
   width: 200px;
 }
@@ -627,23 +663,23 @@ div.poll div.bar div.foreground {
 }
 
 
-.region-sidebar-first .block .inner {
+.-sidebar-first .block .inner {
   background-color: #fff;
-  border: 1px solid #DB610C;
+  border: none;
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
 }
 
 .region-sidebar-first h2 {
-  background-color: #DB610C;
-  border-radius: 6px;
+  /*background-color: #E0E0D1;*/
+  /*border-radius: 6px;*/
   color: #fff;
   font-size: 90%;
-  margin: 2px;
+  /*margin: 2px;*/
   padding: 2px 8px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
+  /*-moz-border-radius: 6px;
+ -webkit-border-radius: 6px;*/
 }
 
 .region-sidebar-first .inner .content {
@@ -652,19 +688,151 @@ div.poll div.bar div.foreground {
 
 
 .region-sidebar-second h2 {
-  background-color: #1BA0CC;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  /*background-color: #E0E0D1;*/
+  /*border-top-left-radius: 8px;
+  border-top-right-radius: 8px;*/
   color: #fff;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 150%;
+  /*font-size: 150%;*/
   font-weight: normal;
   letter-spacing: 1px;
   padding: 7px 15px 5px 15px;
-  -webkit-border-top-left-radius: 8px;
+  /*-webkit-border-top-left-radius: 8px;
   -webkit-border-top-right-radius: 8px;
   -moz-border-radius-topleft: 8px;
-  -moz-border-radius-topright: 8px;
+  -moz-border-radius-topright: 8px;*/
+}
+
+#block-fusion_labels-fusion_region_label{
+	display: none;
+}
+
+#block-search-form{
+	width: 200px;
+	/*margin-left: 600px;*/
+	float: right;
+	float: right;
+	margin-right: 20px;
+}
+
+#header-group-inner{
+	margin-left: 15%;
+	padding-top: 30px;
+}
+
+#block-menu-menu-invitasjonen{
+	margin-left: 500px;
+	margin-right: 30px;
+	width: 220px;
+	float: right;
+}
+
+#header-group{
+	display: inline;
 }
 
 
+.first .last .leaf li{
+	float: right;
+}
+
+
+.header-group .block-menu ul.menu li {
+	-moz-box-shadow:inset 1px 1px 8px -4px #fed897;
+	-webkit-box-shadow:inset 1px 1px 8px -4px #fed897;
+	box-shadow:inset 1px 1px 8px -4px #fed897;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6b33d), color-stop(1, #d29105) );
+	background:-moz-linear-gradient( center top, #f6b33d 5%, #d29105 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d', endColorstr='#d29105');
+	background-color:#f6b33d;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:1px solid #eda933;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:8px 23px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #cd8a15;
+}
+.header-group .block-menu ul.menu li:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d29105), color-stop(1, #f6b33d) );
+	background:-moz-linear-gradient( center top, #d29105 5%, #f6b33d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d29105', endColorstr='#f6b33d');
+	background-color:#d29105;
+}
+.header-group .block-menu ul.menu li:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+#header-group-wrapper{
+	background: #3daa3d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3daa3d 0%, #a7e8b2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3daa3d), color-stop(100%,#a7e8b2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3daa3d 0%,#a7e8b2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3daa3d 0%,#a7e8b2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3daa3d 0%,#a7e8b2 100%); /* IE10+ */
+	background: linear-gradient(top,  #3daa3d 0%,#a7e8b2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3daa3d', endColorstr='#a7e8b2',GradientType=0 ); /* IE6-9 */
+}
+
+#header-site-info-inner{
+	width: 500px;
+	display: inline;
+}
+
+.content .clearfix{
+	/*float: right;*/
+}
+#block-system-user-menu{
+	width: 400px;
+	display: inline;
+}
+#block-system-main-menu{
+	width: 420px;
+	float: right;
+}
+
+#header-site-info{
+	margin-bottom: 0px !important;
+}
+
+a.username{
+	color: #555 !important;
+}
+
+.inner .user-picture{
+	display: none;
+}
+.rate-fivestar-processed{
+	display: none;
+}
+
+.content-inner{
+	border-left: 1px dashed #297229;
+	border-right: 1px dashed #297229;
+}
+#content{
+	width: 620px;
+}
+.node-promoted{
+	border-bottom: 1px dashed #297229;
+}
+.block{
+	margin-bottom: 0px !important;
+}
+#block-block-3{
+	width: 350px;
+	color: white;
+	font-family: Verdana, sans-serif;
+	font-size: 38px;
+	line-height: 1.0;
+	margin-bottom: 0px;
+	margin-left: 100px;
+}

@@ -51,6 +51,7 @@ settings[grid_nested_regions][] = header
 settings[grid_nested_regions][] = content
 settings[grid_nested_regions][] = help
 ; Nested region width adjustments: adjacent regions to subtract for correct region width
+settings[grid_adjusted_groups][main_group][] = sidebar_first
 settings[grid_adjusted_regions][help][] = sidebar_first
 settings[grid_adjusted_regions][help][] = sidebar_second
 settings[grid_adjusted_regions][content][] = sidebar_first
